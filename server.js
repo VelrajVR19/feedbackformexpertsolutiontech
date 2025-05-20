@@ -80,8 +80,8 @@ app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS
+      user: 'expsoltechfeedback@gmail.com',
+      pass: 'vwgempvhjtjpwkxq'
     },
     tls: {
       rejectUnauthorized: false
@@ -90,8 +90,8 @@ app.post('/send', (req, res) => {
   
 
   const mailOptions = {
-    from: process.env.GMAIL_USER,
-    to: process.env.GMAIL_to,
+    from: 'expsoltechfeedback@gmail.com',
+    to: 'daniel.est777@gmail.com',
     subject: `Interview Evaluation - ${name}, ${role}`,
     text: output,
     headers: {
